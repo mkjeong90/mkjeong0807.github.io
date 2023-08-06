@@ -1,1 +1,29 @@
-# mkjeong0807.github.io
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>신져리 플레이 리스트</title>
+        <link rel="stylesheet" href="져리.css">
+        <link rel="shortcut icon" href="Bsong.ico">
+        <link rel="apple-touch-icon" href="Bsong.ico">
+        <meta property="og:image" content="Bsong.ico">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    </head>
+    <body onload="showAll()">
+        <h1>신져리 플레이 리스트</h1>
+        <p>가수 또는 제목으로 검색<!-- <small style="color: rgb(150, 200, 100)"> 2023.01.03 update</small> --></p>
+        <p>
+            <input id="searchBox" type="text" oninput="search(this.value)">
+            <button onclick="cleartext()"
+                onmouseenter="changecolor(this)"
+                onmouseleave="returncolor(this)"
+                style="background-color: rgb(150, 200, 300);">초기화</button>
+        </p>
+        <p id="show"></p><br><br><br><br>
+        <p class="index">
+           
+            
+            <span style="background-color: white; padding: 1px 10px 3px 10px; border-radius: 4px; border: 2px solid rgb(50, 250, 200);"></span>
+        </p>
+        <script src="져리.js"></script>
+    </body>
+</html>
